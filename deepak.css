@@ -1,0 +1,107 @@
+/*CSS for header*/
+.header{
+	background-color: #C7CCCC;
+	width: 100%;
+}	
+	.header #deepak-img{
+	 height: 70px; 
+	 cursor: pointer;
+}
+
+	.modal.deepakimage{
+		height: 60vh;
+		width: 28vw;
+	}
+/*ends here*/
+
+
+/*CSS for Chat Area*/
+.content{
+	padding-top: 5vh;
+	padding-bottom: 12vh;
+}
+	.parallax {
+	    background-image: url("chat-wallpaper.jpg");
+	    min-height: 500px;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	
+	.content #chat-textarea-frnd{
+		background-color: #E5FAF8;
+		font-size: 1.1rem;
+		width: auto;
+		resize: none;
+		margin-left: 3vw;
+		padding-top: 4.6vh;
+		border: none;
+		border-radius: 60px;
+	}
+
+	.content #chat-textarea-self{
+		background-color: #E0F399;
+		font-size: 1.1rem;
+		width: auto;
+		resize: none;
+		margin-left: 3vw;
+		padding-top: 4.6vh;
+		border-radius: 60px;
+	}
+/*ends here*/	
+
+
+/*CSS for footer*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #F2F3F3;
+	color: black;
+	width: 100%;
+}
+.footer #footer-textarea{
+	border-radius: 20px;
+	resize: none;
+	padding-left: 20px;
+}
+/*ends here*/
+
+
+/*Media Queries for modal image*/
+@media only screen and (max-width: 575px) {
+	.deepakimage{
+		height: 50vh;
+		width: 48vw;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.deepakimage{
+		height: 60vh;
+		width: 45vw;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.deepakimage{
+		height: 60vh;
+		width: 35vw;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.deepakimage{
+		height: 60vh;
+		width: 32vw;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.deepakimage{
+		height: 60vh;
+		width: 28vw;
+	}
+}
+/*ends here*/

@@ -1,0 +1,68 @@
+/*CSS for header*/
+.header #my-img{
+	 height: 80px; 
+	 cursor: pointer;
+}
+	.modal .myimage{
+		width: 15vw;
+	}
+
+.header #status{
+	 height: 40px;
+	 cursor: pointer;
+}
+
+	#status-txtarea{
+		font-size: 1.1rem;
+		resize: none;
+		padding-left: 2vw;
+		padding-top: 4.2vh;
+		border-radius: 20px;
+	}
+
+.header #chat{
+	height: 40px;
+	cursor: pointer;
+}
+
+.header #search{
+	font-size: 1.1rem;
+	resize: none;
+	padding-left: 2vw;
+	padding-top: 4.2vh;
+	border-radius: 20px;
+}
+
+.test::after{
+	content: '\2807';
+	font-size: 2rem;
+	color: #2e2e2e;
+}
+/*ends here*/
+
+
+/*CSS for Chat*/
+a:link{
+	text-decoration: none;
+}
+/*ends here*/
+
+
+/*CSS for Display-Page*/
+#main-page{
+	width: 880px;
+}
+/*ends here*/
+
+
+/*CSS for footer*/
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #EEE9E8;
+	height: 11vh;
+	padding-top: 2.3vh;
+	border-radius: 20px;
+}
+/*ends here*/

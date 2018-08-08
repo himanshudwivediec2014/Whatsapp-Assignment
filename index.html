@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+	<title>Whatsapp</title>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+
+								<!-- Header -->
+			<div class="header col-md-4 col-sm-12 d-sm-block" style="background-color: #EEE9E8;">
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-6">
+
+									
+									<!-- Profile Picture -->
+						<img src="my-img.png" class="rounded rounded-circle my-2" id="my-img" data-toggle="modal" data-target="#changeProfilePicture">
+
+									<!-- Profile Picture modal -->
+						<div class="modal fade" id="changeProfilePicture" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+					    		<div class="modal-content">
+					    			<div class="modal-header">
+					        			<h5 class="modal-title" id="ModalCenterTitle">
+					        				About Me
+					        			</h5>
+					        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          				<span aria-hidden="true">&times;</span>
+					        			</button>
+					      			</div>
+					      			<div class="modal-body">
+					       				<div class="media">
+					       					<div class="col-6">
+					       						<img class="mr-3 myimage rounded" src="myimage.png" alt="Himanshu Image">
+					       					</div>										
+											<div class="media-body col-6">
+									  			<h5 class="mt-0">Himanshu Dwivedi</h5>	
+					  						</div>
+										</div>
+					     			</div>
+					    			<div class="modal-footer">      	
+					        			<div class="form-group">
+					        				<div class="container">
+						      					<div class="row">
+						      						<div class="col-sm-12 col-md-6">
+						        						<label for="image">
+						        							<b>Change Profile Picture</b>
+						        						</label>
+						        					</div>
+						        					<div class="col-sm-12 col-md-6">
+						        						<input type="file" name="Image" 
+						        							id ="image" class="	form-control-file">
+						        					</div>
+						      					</div>
+					      					</div>
+					      					<hr>
+					      					<div class="cotainer mt-4">
+					      						<div class="row">
+					      							<div class="col">
+					      								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      							</div>
+					      							<div class="col d-flex justify-content-end">
+					      								<button type="button" class="btn btn-success">Save Changes</button>
+					      							</div>
+					      						</div>
+					      					</div>			
+										</div>
+					      			</div>
+					   			</div>
+							</div>
+						</div>
+					</div>
+
+
+									<!-- Update Status Icon -->
+
+					<div class="col-6 col-md-8 col-lg-6 d-flex justify-content-end">
+						<img src="status.png" class="rounded rounded-circle mt-4 mb-4 mr-2" id="status" data-toggle="modal" data-target="#updateStatus">
+
+									<!-- Update Status modal -->
+						<div class="modal fade" id="updateStatus" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+					    		<div class="modal-content">
+					    			<div class="modal-header">
+					        			<h5 class="modal-title" 
+					        			id="ModalCenterTitle">
+					        				My status
+					        			</h5>
+					        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          				<span aria-hidden="true">&times;</span>
+					        			</button>
+					      			</div>
+					      			<div class="modal-body">
+					       				<div class="media">		       					
+											<div class="media-body col-12">
+									  			<h5 class="mt-0 text-center">Choose pics to upload your status</h5>
+									  			<p class="text-center mt-3">OR</p>
+									  			<textarea placeholder="Express Your Thoughts..." class="form-control" id="status-txtarea" type="text"></textarea>
+									  		</div>
+										</div>
+					     			</div>
+					    			<div class="modal-footer">      	
+					        			<div class="form-group">
+					        				<div class="container">
+						      					<div class="row"> 						
+						        					<div class="col-sm-6">
+						        						<input type="file" name="Image" 
+						        							id ="image" class="	form-control-file">
+						        					</div>
+						        					<div class="col-sm-6 d-flex justify-content-end">
+						        						<button type="button" class="btn btn-success">Upload</button>
+						        					</div>
+						      					</div>
+					      					</div>			
+										</div>
+					      			</div>
+					   			</div>
+							</div>
+						</div>	
+
+
+										<!-- New Chat Icon -->
+						<img src="chat.png" class="rounded rounded-circle mt-4 mb-4" id="chat" data-toggle="modal" data-target="#newChat">
+
+										<!-- New chat modal -->
+						<div class="modal fade" id="newChat" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+					    		<div class="modal-content">
+					    			<div class="modal-header">
+					        			<h5 class="modal-title" id="ModalCenterTitle">
+					        				Start a new chat
+					        			</h5>
+					        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          				<span aria-hidden="true">&times;</span>
+					        			</button>
+					      			</div>
+					      			<div class="modal-body">
+					       				<div class="media">
+					       					<div class="col-12">
+					       						<label for="#search">
+					       							<b><i>Search...</i></b>
+					       						</label>
+
+					       						<textarea placeholder="Search for contacts..." id="search" class="form-control" type="text"></textarea>
+					       					</div>									
+										</div>
+					     			</div>
+					     			<div class="modal-footer">
+					     				<div class="cotainer">
+					     					<div class="row">
+					     						<div class="col">
+					     							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					     						</div>
+					     						<div class="col">
+					     							<button type="button" class="btn btn-success">Select</button>
+					     						</div>
+					     					</div>
+					     				</div>
+					     			</div>					    			
+					   			</div>
+							</div>
+						</div>
+
+						<div class="navbar navbar-default pl-0 pr-0 pt-0">
+							<div class="container-fluid">
+								<div class="navbar-header">
+									<div class="test"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+									<!-- Header Ends -->
+
+			<div class="col-md-8 d-sm-none d-md-block" style="background-color: #F7F9F9;"></div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+
+
+								<!-- Chat Area Stars -->
+
+			<div class="col-md-4 col-sm-12 d-sm-block" style="background-color: #F3F7F7">				
+				<textarea class="form-control mt-3 pl-4" type="text" placeholder="Search or start a new chat" rows="1" style="resize: none; border-radius: 20px;"></textarea>
+
+				<hr>
+
+								<!-- User 1 -->
+
+				<a href="himanshu.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="my-img.png" alt="Himanshu Image" style="height: 50px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0"><b>+91-8989469469</b></h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												Yesterday
+											</small>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<p class="mt-0 pt-0 text-success">
+											<b><i>typing...</i></b>
+										</p>
+									</div>
+									<div class="col d-flex justify-content-end">										
+										<span class="badge badge-success rounded-circle align-self-center" style="margin-left: 20vw;">
+											2
+										</span>
+									</div>
+								</div>														 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 1 ends -->
+
+				<hr>
+
+									<!-- User 2 -->
+
+				<a href="arun.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="arun.jpg" alt="Arun Image" style="height: 50px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0"><b>Arun</b></h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												12:38pm
+											</small>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<p class="mt-0 pt-0">
+											tried...									
+										</p>
+									</div>
+									<div class="col d-flex justify-content-end">
+										<span class="badge badge-success rounded-circle align-self-center" style="margin-left: 20vw;">
+											1
+										</span>
+									</div>
+								</div>											 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 2 ends -->
+				
+				<hr>
+
+
+									<!-- User 3 -->
+				<a href="ajinkya.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="ajinkya.jpg" alt="Ajinkya Image" style="height: 50px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0">Ajinkya</h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												30/07/2018
+											</small>
+										</p>
+									</div>
+								</div>
+								<p class="mt-0 pt-0">
+									gm...
+								</p>							 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 3 ends -->
+
+				<hr>
+
+
+									<!-- User 4 -->
+
+				<a href="piemr.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="pies.jpg" alt="PIEMR Image" style="height: 50px; width: 55px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0"><b>PIEMR-2014</b></h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												Yesterday
+											</small>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<p class="mt-0 pt-0">
+											Hello ever...
+										</p>
+									</div>
+									<div class="col d-flex justify-content-end">
+										<span class="badge badge-success rounded-circle align-self-center" style="margin-left: 20vw;">
+											2
+										</span>										
+									</div>
+								</div>
+															 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 4 ends -->
+
+				<hr>
+
+
+									<!-- User 5 -->
+
+				<a href="jsss.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="jsss.png" alt="JSSS Image" style="height: 50px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0">JSSS-2010</h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												Yesterday
+											</small>
+										</p>
+									</div>
+								</div>
+								<p class="mt-0 pt-0">
+									Hey...									
+								</p>							 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 5 ends -->
+
+				<hr>
+
+
+									<!-- User 6 -->
+
+				<a href="deepak.html" target="_blank" style="color: black;">
+					<div class="media">
+						<div class="row">
+							<div class="col-2">
+								<img class="mr-0 rounded-circle" src="deepak.jpg" alt="Deepak Image" style="height: 50px;">
+							</div>
+						</div>
+						<div class="col-10">
+							<div class="media-body">
+								<div class="row">
+									<div class="col">
+										<h6 class="mt-0">Deepak</h6>
+									</div>
+									<div class="col">
+										<p>
+											<small class="text-muted d-flex justify-content-end">
+												Monday
+											</small>
+										</p>
+									</div>
+								</div>
+								<p class="mt-0 pt-0">
+									Hi...									
+								</p>							 
+							</div>
+						</div>					
+					</div>
+				</a>
+
+									<!-- User 6 ends -->
+				<hr>	
+			</div>
+								<!-- Chat Area Ends -->
+
+
+
+								<!-- Display-Page Starts -->
+
+			<div class="col-md-8 d-none d-md-block" style="background-color: #F7F9F9;">
+				<div class="row">
+					<div class="col d-flex justify-content-center">
+						<img src="logo.png" class="mt-1" id="main-img" alt="WhatsApp Logo">
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="jumbotron col-10" id="main-body" style="background-color: #F7F9F9;">
+						<h1 class="lead text-center" style="font-size: 2.1rem; color: #6D6F6F;">Keep your phone connected</h1>
+						<p class="lead text-center" style="font-size: 1rem; color: grey;">WhatsApp connects to your phone to sync your messages. To reduce data usage, connect your phone to Wi-Fi.</p>
+						<hr class="my-4">
+						<p class="text-center">
+							WhatsApp is available for Windows.
+							<a  class="text-success" href="https://web.whatsapp.com/" target="_blank">
+								Get it here.
+							</a>
+						</p>					
+					</div>
+				</div>
+				
+									<!-- Footer -->
+
+				<div class="row">
+					<div class="footer col d-flex justify-content-center align-items-center">
+						<h6>&copy; Designed And Developed By <b>Himanshu Dwivedi</b></h6>
+					</div>
+				</div>
+									<!-- Footer ends -->
+			</div>
+
+								<!-- Display-Page ends -->
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
