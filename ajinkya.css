@@ -70,10 +70,24 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 349px) {
 	.ajinkyaimage{
-		height: 50vh;
-		width: 48vw;
+		height: 60vh;
+		width: 88vw;
+	}
+}
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+	.ajinkyaimage{
+		height: 60vh;
+		width: 73vw;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 575px) {
+	.ajinkyaimage{
+		height: 60vh;
+		width: 58vw;
 	}
 }
 

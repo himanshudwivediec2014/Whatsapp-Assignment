@@ -70,10 +70,25 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 349px) {
 	.arunimage{
-		height: 50vh;
-		width: 48vw;
+		height: 60vh;
+		width: 84vw;
+	}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+	.arunimage{
+		height: 65vh;
+		width: 80vw;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px) {
+	.arunimage{
+		height: 60vh;
+		width: 57vw;
 	}
 }
 

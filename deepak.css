@@ -70,17 +70,31 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 349px) {
 	.deepakimage{
-		height: 50vh;
-		width: 48vw;
+		height: 61vh;
+		width: 88vw;
+	}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+	.deepakimage{
+		height: 65vh;
+		width: 79vw;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 575px) {
+	.deepakimage{
+		height: 65vh;
+		width: 65vw;
 	}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	.deepakimage{
-		height: 60vh;
-		width: 45vw;
+		height: 65vh;
+		width: 50vw;
 	}
 }
 

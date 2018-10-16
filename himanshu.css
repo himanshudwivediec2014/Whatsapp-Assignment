@@ -71,10 +71,25 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 349px) {
 	.myimage{
-		height: 50vh;
-		width: 48vw;
+		height: 56vh;
+		width: 85vw;
+	}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+	.myimage{
+		height: 60vh;
+		width: 77vw;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px) {
+	.myimage{
+		height: 65vh;
+		width: 60vw;
 	}
 }
 
@@ -94,15 +109,15 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.myimage{
-		height: 60vh;
+		height: 65vh;
 		width: 32vw;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.myimage{
-		height: 60vh;
-		width: 32vw;
+		height: 64vh;
+		width: 30vw;
 	}
 }
 /*ends here*/

@@ -61,7 +61,22 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 349px) {
+	.piemrimage{
+		height: 56vh;
+		width: 85vw;
+	}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+	.piemrimage{
+		height: 57vh;
+		width: 70vw;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 575px) {
 	.piemrimage{
 		height: 50vh;
 		width: 48vw;

@@ -71,10 +71,24 @@
 
 
 /*Media Queries for modal image*/
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 349px) {
 	.jsssimage{
-		height: 50vh;
-		width: 48vw;
+		height: 56vh;
+		width: 84vw;
+	}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+	.jsssimage{
+		height: 60vh;
+		width: 75vw;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px) {
+	.jsssimage{
+		height: 60vh;
+		width: 60vw;
 	}
 }
 
